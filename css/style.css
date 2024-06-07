@@ -27,7 +27,7 @@
         }
 
         body {
-            background-image: "C:\Users\joaol\Downloads\digital-art-son-goku-dragon-ball-dragon-ball-z-island-hd-wallpaper-preview.jpg";
+            /*background-image: "C:\Users\joaol\Downloads\digital-art-son-goku-dragon-ball-dragon-ball-z-island-hd-wallpaper-preview.jpg";*/
             image-resolution: auto;
             height: 100vh;
             background-color: #f6f6f6;
@@ -56,18 +56,14 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
         }
 
-        button:hover {
-            background-color: orange;
-            border-radius: 10px;
-            padding: 5px 0;
-            transition-duration: 0.5s;
-            box-shadow: 3px 3px 1px darkgray;
-
-        }
-
         .titulo {
             width: 1000px;
             margin: 0 auto;
+        }
+
+        article {
+            width: 100%;
+            margin: 10px;
         }
 
         button {
@@ -87,6 +83,15 @@
             box-shadow: 3px 3px 1px orange;
         }
 
+        button:hover {
+            background-color: orange;
+            border-radius: 10px;
+            padding: 5px 0;
+            transition-duration: 0.5s;
+            box-shadow: 3px 3px 1px darkgray;
+
+        }
+
         button:active {
             background-color: orange;
             box-shadow: 0 5px darkgray;
@@ -96,4 +101,29 @@
         footer {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: small;
+        }
+
+        /** media queries para smartphones **/
+        @media only screen and (min-width: 300px) and (max-width: 600px) {
+            .titulo {
+                width: 60%;
+                margin: 0px;
+            }
+
+            button {
+                width: 30%;
+                margin-left: 35%;
+            }
+        }
+
+        /** media queries para tablets **/
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            .titulo {
+                width: 70%;
+            }
+
+            button {
+                width: 20%;
+                margin-left: 40%;
+            }
         }
